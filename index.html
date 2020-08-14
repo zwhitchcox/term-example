@@ -1,0 +1,19 @@
+<!doctype html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
+    </head>
+    <body>
+      <div id="terminal"></div>
+      <script>
+        var term = new Terminal();
+        term.open(document.getElementById('terminal'));
+        const ws = new WebSocket("ws://localhost:8080")
+        const attachAddon = new attach.attach(term, ws)
+        term.loadAddon(attachAddon)
+      ws.onerror = console.error
+      </script>
+    </body>
+  </html>
