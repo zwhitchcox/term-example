@@ -2,7 +2,7 @@
 
 Simple example to implement a server that communicates over websockets.
 
-![Demo Gif](demo.gif)
+![Demo Gif](demo-term.gif)
 
 The stack uses
 
