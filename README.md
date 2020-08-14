@@ -2,6 +2,8 @@
 
 Simple example to implement a server that communicates over websockets.
 
+![Demo Gif](demo.gif)
+
 The stack uses
 
 * [node-pty](https://github.com/microsoft/node-pty)
